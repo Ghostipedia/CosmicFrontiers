@@ -3,6 +3,7 @@ ServerEvents.recipes(event => {
         .itemInputs(['gtceu:hv_machine_hull', '4x #gtceu:circuits/hv', '2x gtceu:hv_robot_arm', 'gtceu:hv_electric_pump', 'minecraft:redstone_lamp', '2x gtceu:terrasteel_screw'])
         .inputFluids('gtceu:aether_augmented_sediment 1250')
         .itemOutputs('gtceu:arboreal_growth_facility')
+        .circuit(3)
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
 

@@ -379,7 +379,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.flora_nurturer('amber_aether')
         .notConsumable('1x aether:golden_oak_sapling')
-        .notConsumable('1x deep_aether:golden_heights_grass_block')
+        .notConsumable('1x aether:aether_dirt')
         .inputFluids('gtceu:aether_augmented_sediment 200')
         .itemOutputs('1x aether:golden_amber')
         .duration(120)
@@ -392,6 +392,19 @@ ServerEvents.recipes(event => {
 
     ]
     //Flora Nurturer Recipes
+
+
+
+    //Industrial Grade Floral Propagator controller block
+    event.recipes.gtceu.assembler('Industrial_Propagator')
+        .itemInputs(['1x gtceu:hv_machine_hull','4x #gtceu:circuits/hv','2x gtceu:hv_robot_arm','gtceu:hv_electric_pump','1x minecraft:redstone_lamp','2x gtceu:terrasteel_screw'])
+        .inputFluids('gtceu:aether_augmented_sediment 1250')
+        .itemOutputs('1x gtceu:industrial_grade_floral_propagator')
+        .duration(200)
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.HV])
+
+
 
 
 

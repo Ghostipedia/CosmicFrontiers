@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.gas_collector('aether_air_collection')
         .outputFluids('gtceu:aether_air 10000')
         .duration(200)
-        .circuit(5)
+        .circuit(4)
         .dimension('aether:the_aether')
         .EUt(GTValues.VA[GTValues.HV]);
     //Liquid Aether Air

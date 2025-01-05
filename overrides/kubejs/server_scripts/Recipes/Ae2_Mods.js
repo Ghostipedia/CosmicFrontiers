@@ -456,6 +456,18 @@ ServerEvents.recipes(event => {
     .itemOutputs('arseng:source_cell_housing')
     .duration(80)
     .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.assembler('megacells:mega_item_cell_housing')
+    .itemInputs(['3x gtceu:naquadah_alloy_plate','2x gtceu:fusion_glass','2x gtceu:hssg_single_cable','4x ae2:formation_core','4x ae2:annihilation_core'])
+    .inputFluids('gtceu:polybenzimidazole 576')
+    .itemOutputs('megacells:mega_item_cell_housing')
+    .duration(80)
+    .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.assembler('megacells:mega_fluid_cell_housing')
+    .itemInputs(['3x gtceu:trinium_plate','2x gtceu:fusion_glass','2x gtceu:hssg_single_cable','4x ae2:formation_core','4x ae2:annihilation_core'])
+    .inputFluids('gtceu:polybenzimidazole 576')
+    .itemOutputs('megacells:mega_fluid_cell_housing')
+    .duration(80)
+    .EUt(GTValues.VA[GTValues.LuV]);
   event.recipes.gtceu.assembler('arseng:basic_card_craft')
     .itemInputs(['16x gtceu:fine_red_alloy_wire', '4x gtceu:steel_plate', '4x gtceu:rose_gold_plate', '#gtceu:circuits/mv'])
     .inputFluids(`gtceu:soldering_alloy 144`)

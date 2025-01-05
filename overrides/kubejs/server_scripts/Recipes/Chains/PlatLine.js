@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:hydrogen_peroxide 1000')
         .inputFluids('gtceu:ammonia 6000')
         .outputFluids('gtceu:hydrazine 1000')
-        .outputFluids('gtceu:water 2000')
+        .outputFluids('minecraft:water 2000')
         .duration(320)
         .EUt(GTValues.VA[GTValues.MV]);
     //Bad Plat Recipe

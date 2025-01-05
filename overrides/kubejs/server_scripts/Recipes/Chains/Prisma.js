@@ -71,5 +71,16 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(GTValues.VA[GTValues.HV]);
 
-
+    //Chromatic Floatation Plant
+    event.shaped('cosmiccore:chromatic_flotation_plant',[
+        'ABA',
+        'CDC',
+        'EBE'
+    ], {
+        A: 'gtceu:tungsten_steel_drum',
+        B: '#gtceu:circuits/luv',
+        C: 'gtceu:iv_electric_pump',
+        D: 'gtceu:iv_machine_hull',
+        E: 'gtceu:iv_conveyor_module'
+    })
 })
